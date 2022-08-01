@@ -1,0 +1,51 @@
+html, body{
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.title-background{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/haikei.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 190px 0px;
+}
+
+.title{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    width: 100%;
+}
+
+.main{
+    width: 960px;
+    padding: 600px 0px;
+    margin:0 auto;
+    background-color: rgba(236, 236, 236, 0.514);
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+
+h1{
+    font-size:60px;
+    font-weight: 300;
+}

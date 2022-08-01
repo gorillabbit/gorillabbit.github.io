@@ -1,0 +1,60 @@
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>gorillabbit's portfolio</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <script src="https://kit.fontawesome.com/262c6d1046.js" crossorigin="anonymous"></script>
+
+        <!--スムーズスクロールのjquery-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $('a[href^=#]').click(function(){
+                    // スクロールの速度
+                    var speed = 400; // ミリ秒
+                    // アンカーの値取得
+                    var href= $(this).attr("href");
+                    // 移動先を取得
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    // 移動先を数値で取得
+                    var position = target.offset().top;
+                    // スムーススクロール
+                    $('body,html').animate({scrollTop:position}, speed, 'swing');
+                    return false;
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <div class="title-background">
+            <div class="title">
+                <h1>gorillabbit's portfolio</h1>
+                <p>syosyinsya engineer</p>
+                <ul class="menu">
+                    <li><i class="fa-solid fa-house"></i><a href=""> home</a></li>
+                    <li><i class="fa-solid fa-user"></i><a href="#profile_jump"> profile</a></li>
+                    <li><i class="fa-solid fa-pen"></i><a href=""> works</a></li>
+                    <li><i class="fa-solid fa-envelope"></i><a href=""> contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="profile">
+                <a id="profile_jump"></a>
+                <h2><i class="fa-solid fa-user"></i> Profile</h2>
+                <p>はじめまして。gorillabbitと申します。</p>
+                <p>趣味でプログラミングを多少しています。いろんな言語やフレームワークに手を出しては飽きる遊びをしています。</p>
+            </div>
+            <div class="works">
+                <h2><i class="fa-solid fa-pen"></i> Works</h2>
+
+            </div>
+            <div class="contact">
+                <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+                <p>modsyoukaizenryoku@gmail.com</p>
+
+            </div>
+        </div>
+    </body>
+</html>
